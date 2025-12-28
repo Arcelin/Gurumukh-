@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Multifunctional Punching & Shearing Machine (MPS)</title>
+
+<style>
+/* ================================
+   GLOBAL RESET + VARIABLES
+================================ */
+:root {
+    --primary: #0f2a44;
+    --secondary: #d62828;
+    --text: #444;
+    --light-bg: #f4f7fb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background: var(--light-bg);
+    color: var(--text);
+}
+
+/* ================================
+   PAGE SECTION
+================================ */
+.sub-page.section {
+    padding: 90px 20px;
+    background:
+        radial-gradient(circle at top right, rgba(214,40,40,0.08), transparent 45%),
+        radial-gradient(circle at bottom left, rgba(15,42,68,0.08), transparent 45%),
+        linear-gradient(135deg, #f7f9fc, #e8edf4);
+}
+
+/* ================================
+   MAIN CONTAINER
+================================ */
+.sub-box {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1.15fr;
+    gap: 60px;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 55px;
+    box-shadow:
+        0 30px 60px rgba(0,0,0,0.08),
+        inset 0 1px 0 rgba(255,255,255,0.6);
+    position: relative;
+    overflow: hidden;
+    animation: fadeUp 0.9s ease forwards;
+}
+
+/* Accent Bar */
+.sub-box::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 7px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--primary), var(--secondary));
+}
+
+/* ================================
+   IMAGE STYLING
+================================ */
+.sub-box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    object-fit: cover;
+    box-shadow: 0 18px 40px rgba(0,0,0,0.18);
+    transition: transform 0.6s ease, box-shadow 0.6s ease;
+}
+
+.sub-box img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 28px 60px rgba(0,0,0,0.25);
+}
+
+/* ================================
+   CONTENT AREA
+================================ */
+.sub-box > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Title */
+.sub-box h2 {
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 28px;
+    position: relative;
+}
+
+/* Title underline */
+.sub-box h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    width: 120px;
+    height: 4px;
+    background: linear-gradient(to right, var(--secondary), var(--primary));
+    border-radius: 3px;
+}
+
+/* Text */
+.sub-box p {
+    font-size: 16.6px;
+    line-height: 1.85;
+    margin-bottom: 20px;
+    color: #4a4a4a;
+}
+
+/* ================================
+   CTA BUTTON
+================================ */
+.back {
+    margin-top: 32px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 32px;
+    font-size: 14.5px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #ffffff;
+    background: linear-gradient(135deg, var(--primary), #1b4f72);
+    border-radius: 60px;
+    box-shadow: 0 12px 28px rgba(15,42,68,0.35);
+    transition: all 0.35s ease;
+    width: fit-content;
+}
+
+.back:hover {
+    background: linear-gradient(135deg, var(--secondary), #a4161a);
+    transform: translateY(-4px);
+    box-shadow: 0 18px 38px rgba(214,40,40,0.45);
+}
+
+/* ================================
+   ANIMATION
+================================ */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+@media (max-width: 1024px) {
+    .sub-box {
+        grid-template-columns: 1fr;
+        padding: 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    .sub-page.section {
+        padding: 60px 15px;
+    }
+
+    .sub-box {
+        padding: 28px;
+        gap: 35px;
+    }
+
+    .sub-box h2 {
+        font-size: 28px;
+    }
+
+    .sub-box p {
+        font-size: 15.2px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- ================================
+     MULTIFUNCTIONAL PUNCHING &
+     SHEARING MACHINE (MPS)
+================================ -->
+<div id="mps" class="sub-page section">
+    <div class="sub-box">
+
+        <img src="/Images/Main-Sub-Categories renamed (1)/Multifunctional Punching-MSC.png"
+             alt="Multifunctional Punching and Shearing Machine"
+             loading="lazy">
+
+        <div>
+            <h2>Multifunctional Punching & Shearing Machine (MPS)</h2>
+
+            <p>
+                The Multifunctional Punching & Shearing Machine (MPS) is a versatile
+                fabrication solution designed to perform multiple sheet metal
+                operations on a single platform, combining punching, shearing and
+                bending functions.
+            </p>
+
+            <p>
+                Built with a heavy-duty fabricated steel frame, the MPS ensures
+                stability and reliable performance during continuous operations.
+                Its integrated design minimizes material handling and setup time.
+            </p>
+
+            <p>
+                These machines are widely used in fabrication workshops, electrical
+                panel manufacturing, steel furniture production, enclosure
+                fabrication and general job-work units.
+            </p>
+
+            <p>
+                Designed for ease of operation and long service life, the MPS from
+                Gurumukh Machine Industries delivers dependable performance backed
+                by strong after-sales support.
+            </p>
+
+            <a class="back" href="othermachines.html">← Back to Products</a>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

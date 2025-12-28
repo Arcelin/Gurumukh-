@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Over Crank Power Shearing Machine</title>
+
+<style>
+/* ================================
+   GLOBAL RESET + VARIABLES
+================================ */
+:root {
+    --primary: #0f2a44;
+    --secondary: #d62828;
+    --text: #444;
+    --light-bg: #f4f7fb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background: var(--light-bg);
+    color: var(--text);
+}
+
+/* ================================
+   PAGE SECTION
+================================ */
+.sub-page.section {
+    padding: 90px 20px;
+    background:
+        radial-gradient(circle at top right, rgba(214,40,40,0.08), transparent 45%),
+        radial-gradient(circle at bottom left, rgba(15,42,68,0.08), transparent 45%),
+        linear-gradient(135deg, #f7f9fc, #e8edf4);
+}
+
+/* ================================
+   MAIN CONTAINER
+================================ */
+.sub-box {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1.15fr;
+    gap: 60px;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 55px;
+    box-shadow:
+        0 30px 60px rgba(0,0,0,0.08),
+        inset 0 1px 0 rgba(255,255,255,0.6);
+    position: relative;
+    overflow: hidden;
+    animation: fadeUp 0.9s ease forwards;
+}
+
+/* Accent Bar */
+.sub-box::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 7px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--primary), var(--secondary));
+}
+
+/* ================================
+   IMAGE STYLING
+================================ */
+.sub-box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    object-fit: cover;
+    box-shadow: 0 18px 40px rgba(0,0,0,0.18);
+    transition: transform 0.6s ease, box-shadow 0.6s ease;
+}
+
+.sub-box img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 28px 60px rgba(0,0,0,0.25);
+}
+
+/* ================================
+   CONTENT AREA
+================================ */
+.sub-box > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Title */
+.sub-box h2 {
+    font-size: 38px;
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 28px;
+    position: relative;
+}
+
+/* Title underline */
+.sub-box h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    width: 110px;
+    height: 4px;
+    background: linear-gradient(to right, var(--secondary), var(--primary));
+    border-radius: 3px;
+}
+
+/* Text */
+.sub-box p {
+    font-size: 16.6px;
+    line-height: 1.85;
+    margin-bottom: 20px;
+    color: #4a4a4a;
+}
+
+/* ================================
+   CTA BUTTON
+================================ */
+.back {
+    margin-top: 32px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 30px;
+    font-size: 14.5px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #ffffff;
+    background: linear-gradient(135deg, var(--primary), #1b4f72);
+    border-radius: 60px;
+    box-shadow: 0 12px 28px rgba(15,42,68,0.35);
+    transition: all 0.35s ease;
+}
+
+.back:hover {
+    background: linear-gradient(135deg, var(--secondary), #a4161a);
+    transform: translateY(-4px);
+    box-shadow: 0 18px 38px rgba(214,40,40,0.45);
+}
+
+/* ================================
+   ANIMATION
+================================ */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+@media (max-width: 1024px) {
+    .sub-box {
+        grid-template-columns: 1fr;
+        padding: 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    .sub-page.section {
+        padding: 60px 15px;
+    }
+
+    .sub-box {
+        padding: 28px;
+        gap: 35px;
+    }
+
+    .sub-box h2 {
+        font-size: 28px;
+    }
+
+    .sub-box p {
+        font-size: 15.2px;
+    }
+}
+/* VIDEO STYLING */
+.product-video {
+  max-width: 900px;
+  margin: 40px auto;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.product-video iframe {
+  width: 100%;
+  height: 480px;
+}
+
+@media (max-width: 768px) {
+  .product-video iframe {
+    height: 260px;
+  }
+}
+
+
+</style>
+</head>
+
+<body>
+
+<!-- ================================
+     OVER CRANK POWER SHEARING
+================================ -->
+<div id="over-crank" class="sub-page section">
+    <div class="sub-box">
+
+        <img src="Images/Main-Sub-Categories renamed (1)/over Crank Power Shearing Machine-MSC.png" alt="Over Crank Power Shearing Machine">
+
+        <div>
+            <h2>Over Crank Power Shearing Machine</h2>
+
+            <p>
+                The Over Crank Power Shearing Machine is built for high cutting force,
+                faster stroke speed and heavy-duty production requirements. The crank
+                mechanism positioned above the cutting table provides greater mechanical
+                advantage during each cutting cycle.
+            </p>
+
+            <p>
+                Constructed with a heavy-duty fabricated steel frame, the machine
+                delivers reliable performance under high loads. The powerful mechanical
+                drive system ensures smooth yet forceful cutting action even during
+                extended production runs.
+            </p>
+
+            <p>
+                Over Crank Power Shearing Machines are widely used in heavy fabrication
+                units, structural fabrication workshops and industrial manufacturing
+                plants where productivity and cutting capacity are the primary concerns.
+            </p>
+
+            <!-- OVER CRANK SHEARING VIDEO SECTION -->
+<section class="section">
+  <div class="container">
+    <h2>Over Crank Shearing Machine – Working Video</h2>
+    <div class="product-video">
+      <iframe
+        src="https://www.youtube.com/embed/TcZ5yCF2lxs?rel=0"
+        title="Over Crank Shearing Machine Working Video"
+        loading="lazy"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+</section>
+
+
+            <a class="back" href="shearingmachine.html">← Back to Products</a>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

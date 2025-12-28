@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Under Crank Power Shearing Machine</title>
+
+<style>
+/* ================================
+   GLOBAL RESET & VARIABLES
+================================ */
+:root {
+    --primary: #0f2a44;
+    --secondary: #c1121f;
+    --text: #444;
+    --light-bg: #f4f7fb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background: var(--light-bg);
+    color: var(--text);
+}
+
+/* ================================
+   PAGE HEADER
+================================ */
+.header {
+    background: linear-gradient(135deg, #111, #1e293b);
+    color: #fff;
+    padding: 55px 20px;
+    text-align: center;
+}
+
+.header h2 {
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+/* ================================
+   PAGE SECTION
+================================ */
+.sub-page {
+    padding: 80px 20px;
+}
+
+/* ================================
+   MAIN CONTAINER
+================================ */
+.sub-box {
+    max-width: 1150px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1.15fr;
+    gap: 55px;
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 50px;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.08);
+    position: relative;
+    animation: fadeUp 0.9s ease forwards;
+}
+
+/* Accent Strip */
+.sub-box::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 6px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--primary), var(--secondary));
+}
+
+/* ================================
+   IMAGE STYLING
+================================ */
+.sub-box img {
+    width: 100%;
+    height: 100%;
+    max-height: 420px;
+    object-fit: cover;
+    border-radius: 14px;
+    box-shadow: 0 18px 40px rgba(0,0,0,0.18);
+    transition: transform 0.6s ease, box-shadow 0.6s ease;
+}
+
+.sub-box img:hover {
+    transform: scale(1.04);
+    box-shadow: 0 26px 55px rgba(0,0,0,0.25);
+}
+
+/* ================================
+   CONTENT AREA
+================================ */
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content h1 {
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 26px;
+    position: relative;
+}
+
+.content h1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    width: 95px;
+    height: 4px;
+    background: linear-gradient(to right, var(--secondary), var(--primary));
+    border-radius: 3px;
+}
+
+.content p {
+    font-size: 16.5px;
+    line-height: 1.85;
+    margin-bottom: 18px;
+    color: #4a4a4a;
+}
+
+/* ================================
+   BUTTON
+================================ */
+.btn {
+    margin-top: 28px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 32px;
+    font-size: 14.5px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #ffffff;
+    background: linear-gradient(135deg, var(--primary), #1b4f72);
+    border-radius: 60px;
+    box-shadow: 0 12px 28px rgba(15,42,68,0.35);
+    transition: all 0.35s ease;
+    width: fit-content;
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, var(--secondary), #a4161a);
+    transform: translateY(-4px);
+    box-shadow: 0 18px 38px rgba(193,18,31,0.45);
+}
+
+/* ================================
+   ANIMATION
+================================ */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+@media (max-width: 1024px) {
+    .sub-box {
+        grid-template-columns: 1fr;
+        padding: 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    .header h2 {
+        font-size: 24px;
+    }
+
+    .sub-page {
+        padding: 60px 15px;
+    }
+
+    .sub-box {
+        padding: 28px;
+        gap: 35px;
+    }
+
+    .content h1 {
+        font-size: 28px;
+    }
+
+    .content p {
+        font-size: 15.2px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- ================================
+     HEADER
+================================ -->
+<div class="header">
+    <h2>Shearing Machines</h2>
+</div>
+
+<!-- ================================
+     UNDER CRANK POWER SHEARING
+================================ -->
+<section class="sub-page">
+    <div class="sub-box">
+
+        <img src="/Images/Main-Sub-Categories renamed (1)/Under Crank Power Shearing Machine-MSC.png"
+             alt="Under Crank Power Shearing Machine"
+             loading="lazy">
+
+        <div class="content">
+            <h1>Under Crank Power Shearing Machine</h1>
+
+            <p>
+                Under Crank Power Shearing Machines are designed for stable,
+                vibration-free and precise cutting operations. The crank mechanism
+                is positioned below the cutting table to ensure uniform force
+                distribution and smooth shearing action.
+            </p>
+
+            <p>
+                These machines are widely used in sheet metal fabrication units,
+                automotive workshops, electrical panel manufacturing and general
+                engineering industries where accuracy, durability and long
+                production cycles are essential.
+            </p>
+
+            <a href="shearingmachine.html" class="btn">← Back to Products</a>
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>

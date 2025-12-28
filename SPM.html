@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Drill Machine & SPM</title>
+
+<style>
+/* ================================
+   GLOBAL RESET + VARIABLES
+================================ */
+:root {
+    --primary: #0f2a44;
+    --secondary: #d62828;
+    --text: #444;
+    --light-bg: #f4f7fb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background: var(--light-bg);
+    color: var(--text);
+}
+
+/* ================================
+   SECTION BACKGROUND
+================================ */
+.sub-page.section {
+    padding: 90px 20px;
+    background:
+        radial-gradient(circle at top right, rgba(214,40,40,0.08), transparent 45%),
+        radial-gradient(circle at bottom left, rgba(15,42,68,0.08), transparent 45%),
+        linear-gradient(135deg, #f7f9fc, #e8edf4);
+}
+
+/* ================================
+   MAIN CONTAINER
+================================ */
+.sub-box {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1.15fr;
+    gap: 60px;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 55px;
+    box-shadow:
+        0 30px 60px rgba(0,0,0,0.08),
+        inset 0 1px 0 rgba(255,255,255,0.6);
+    position: relative;
+    overflow: hidden;
+    animation: fadeUp 0.9s ease forwards;
+}
+
+/* Accent Bar */
+.sub-box::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 7px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--primary), var(--secondary));
+}
+
+/* ================================
+   IMAGE STYLING
+================================ */
+.sub-box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    object-fit: cover;
+    box-shadow: 0 18px 40px rgba(0,0,0,0.18);
+    transition: transform 0.6s ease, box-shadow 0.6s ease;
+}
+
+.sub-box img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 28px 60px rgba(0,0,0,0.25);
+}
+
+/* ================================
+   CONTENT AREA
+================================ */
+.sub-box > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Title */
+.sub-box h2 {
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 26px;
+    position: relative;
+}
+
+/* Underline */
+.sub-box h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    width: 85px;
+    height: 4px;
+    background: linear-gradient(to right, var(--secondary), var(--primary));
+    border-radius: 3px;
+}
+
+/* Paragraphs */
+.sub-box p {
+    font-size: 16.5px;
+    line-height: 1.85;
+    margin-bottom: 18px;
+    color: #4a4a4a;
+}
+
+/* ================================
+   CTA BUTTON
+================================ */
+.back {
+    margin-top: 30px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 32px;
+    font-size: 14.5px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #ffffff;
+    background: linear-gradient(135deg, var(--primary), #1b4f72);
+    border-radius: 60px;
+    box-shadow: 0 12px 28px rgba(15,42,68,0.35);
+    transition: all 0.35s ease;
+    width: fit-content;
+}
+
+.back:hover {
+    background: linear-gradient(135deg, var(--secondary), #a4161a);
+    transform: translateY(-4px);
+    box-shadow: 0 18px 38px rgba(214,40,40,0.45);
+}
+
+/* ================================
+   ANIMATION
+================================ */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+@media (max-width: 1024px) {
+    .sub-box {
+        grid-template-columns: 1fr;
+        padding: 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    .sub-page.section {
+        padding: 60px 15px;
+    }
+
+    .sub-box {
+        padding: 28px;
+        gap: 35px;
+    }
+
+    .sub-box h2 {
+        font-size: 28px;
+    }
+
+    .sub-box p {
+        font-size: 15.2px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- ================================
+     DRILL MACHINE & SPM SECTION
+================================ -->
+<div id="spm" class="sub-page section">
+    <div class="sub-box">
+
+        <img src="/Images/Main-Sub-Categories renamed (1)/drill machine-MSC.png" alt="Drill Machine Special Purpose Machine">
+
+        <div>
+            <h2>Drill Machine & Special Purpose Machine (SPM)</h2>
+
+            <p>
+                The Drill Machine – Special Purpose Machine (SPM) is designed for
+                high-accuracy drilling and tapping operations in repetitive and
+                production-oriented manufacturing environments.
+            </p>
+
+            <p>
+                Built with a rigid fabricated steel structure, the SPM drill machine
+                offers excellent stability during both drilling and tapping
+                processes. The precision-aligned spindle system ensures accurate
+                hole positioning and smooth thread formation with minimal tool wear.
+            </p>
+
+            <p>
+                The integrated drilling and tapping capability eliminates the need
+                for separate machines or multiple setups, helping reduce handling
+                time and significantly improve workflow efficiency.
+            </p>
+
+            <p>
+                SPM Drill Machines are widely used in automotive components,
+                electrical panels, fabrication units, tool rooms and batch
+                production workshops where accuracy and repeatability are critical.
+            </p>
+
+            <p>
+                Manufactured for durability, reliability and ease of maintenance,
+                this SPM Drill Machine delivers consistent performance for demanding
+                industrial applications.
+            </p>
+
+            <a class="back" href="#">← Back to Products</a>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

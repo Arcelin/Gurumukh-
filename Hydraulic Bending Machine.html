@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hydraulic Bending Machine</title>
+
+<style>
+/* ================================
+   GLOBAL RESET + VARIABLES
+================================ */
+:root {
+    --primary: #0f2a44;
+    --secondary: #d62828;
+    --text: #444;
+    --light-bg: #f4f7fb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background: var(--light-bg);
+    color: var(--text);
+}
+
+/* ================================
+   PAGE SECTION
+================================ */
+.sub-page.section {
+    padding: 90px 20px;
+    background:
+        radial-gradient(circle at top right, rgba(214,40,40,0.08), transparent 45%),
+        radial-gradient(circle at bottom left, rgba(15,42,68,0.08), transparent 45%),
+        linear-gradient(135deg, #f7f9fc, #e8edf4);
+}
+
+/* ================================
+   MAIN CONTAINER
+================================ */
+.sub-box {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1.15fr;
+    gap: 60px;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 55px;
+    box-shadow:
+        0 30px 60px rgba(0,0,0,0.08),
+        inset 0 1px 0 rgba(255,255,255,0.6);
+    position: relative;
+    overflow: hidden;
+    animation: fadeUp 0.9s ease forwards;
+}
+
+/* Accent Bar */
+.sub-box::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 7px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--primary), var(--secondary));
+}
+
+/* ================================
+   IMAGE STYLING
+================================ */
+.sub-box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    object-fit: cover;
+    box-shadow: 0 18px 40px rgba(0,0,0,0.18);
+    transition: transform 0.6s ease, box-shadow 0.6s ease;
+}
+
+.sub-box img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 28px 60px rgba(0,0,0,0.25);
+}
+
+/* ================================
+   CONTENT AREA
+================================ */
+.sub-box > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Title */
+.sub-box h2 {
+    font-size: 38px;
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 28px;
+    position: relative;
+}
+
+/* Title underline */
+.sub-box h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    width: 90px;
+    height: 4px;
+    background: linear-gradient(to right, var(--secondary), var(--primary));
+    border-radius: 3px;
+}
+
+/* Text */
+.sub-box p {
+    font-size: 16.6px;
+    line-height: 1.85;
+    margin-bottom: 20px;
+    color: #4a4a4a;
+}
+
+/* ================================
+   CTA BUTTON
+================================ */
+.back {
+    margin-top: 32px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 30px;
+    font-size: 14.5px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #ffffff;
+    background: linear-gradient(135deg, var(--primary), #1b4f72);
+    border-radius: 60px;
+    box-shadow: 0 12px 28px rgba(15,42,68,0.35);
+    transition: all 0.35s ease;
+}
+
+.back:hover {
+    background: linear-gradient(135deg, var(--secondary), #a4161a);
+    transform: translateY(-4px);
+    box-shadow: 0 18px 38px rgba(214,40,40,0.45);
+}
+
+/* ================================
+   ANIMATION
+================================ */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+@media (max-width: 1024px) {
+    .sub-box {
+        grid-template-columns: 1fr;
+        padding: 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    .sub-page.section {
+        padding: 60px 15px;
+    }
+
+    .sub-box {
+        padding: 28px;
+        gap: 35px;
+    }
+
+    .sub-box h2 {
+        font-size: 28px;
+    }
+
+    .sub-box p {
+        font-size: 15.2px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- ================================
+     HYDRAULIC BENDING MACHINE
+================================ -->
+<div id="hydraulic-bending" class="sub-page section">
+    <div class="sub-box">
+
+        <img src="/Images/Main-Sub-Categories renamed (1)/hydraulic shearing bending machine-MSC.png" alt="Hydraulic Bending Machine">
+
+        <div>
+            <h2>Hydraulic Bending Machine</h2>
+
+            <p>
+                The Hydraulic Bending Machine is engineered for accurate and uniform
+                bending of sheet metal using hydraulic force. It delivers precise
+                angle control, consistent bending pressure and smooth operation
+                across a wide range of bending applications.
+            </p>
+
+            <p>
+                The robust frame construction ensures minimal deflection during
+                bending, maintaining dimensional accuracy across repeated operations.
+                The hydraulic system allows smooth ram movement for controlled bending
+                of MS, SS and aluminium sheets.
+            </p>
+
+            <p>
+                Hydraulic Bending Machines are widely used in sheet metal fabrication,
+                enclosure manufacturing, furniture production, ducting fabrication
+                and structural component manufacturing where precision is essential.
+            </p>
+
+            <p>
+                Built for reliability, safety and long-term performance, the Hydraulic
+                Bending Machine from Gurumukh Machine Industries is a dependable solution
+                for workshops and industrial production units.
+            </p>
+
+            <a class="back" href="hydraulicmachine.html">← Back to Products</a>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

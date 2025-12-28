@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Quick Contact Bar</title>
+
+<style>
+/* =========================
+   QUICK CONTACT TRUST BAR
+========================= */
+.quick-contact-bar {
+    background: #0f2a44; /* Industrial Blue */
+    color: #ffffff;
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.quick-contact-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+/* Contact Items */
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 14px;
+}
+
+.contact-info span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .quick-contact-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-info {
+        justify-content: center;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- =========================
+     QUICK CONTACT BAR
+========================= -->
+<div class="quick-contact-bar">
+    <div class="quick-contact-container">
+        
+        <div class="contact-info">
+            <span>📞 Call: +91 836 083 2328</span>
+            <span>✉️ Email: info@gurumukhmachines.com</span>
+            <span>📍 Location: Plot no 288, Industrial Focal Point, Mehta Road Amritsar-143001</span>
+        </div>
+
+
+    </div>
+</div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<title>Gurumukh Machine Industries | Industrial Machinery Manufacturer</title>
+
+<style>
+/* RESET */
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Arial,sans-serif;}
+body{background:#f6f8fb;color:#333;line-height:1.6;}
+.container{
+  width:80%;                 /* wider container */
+  max-width:1000px;          /* more horizontal room */
+  margin-left:10px;          /* 🔥 pushes header LEFT */
+  margin-right:auto;
+}
+
+
+.section{padding:90px 0;}
+h2{text-align:center;font-size:34px;margin-bottom:50px;color:#111;}
+
+/* ================= HEADER ================= */
+.header{
+  background:#ffffff; /* CHANGED TO WHITE */
+  padding:16px 0;
+  position:sticky;
+  top:0;
+  z-index:1000;
+  border-bottom:1px solid #ddd;
+  box-shadow: 0 2px 12px rgba(15,23,42,0.06);
+  
+}
+.header-flex{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.logo img{
+  height:55px;
+  margin-right:20px;
+}
+
+/* NAV */
+.nav{list-style:none;display:flex;align-items:center;}
+.nav>li{position:relative;}
+.nav>li>a{
+  color:#000;                /* BLACK TEXT */
+  padding:12px 18px;
+  text-decoration:none;
+  font-weight:500;
+}
+.nav>li>a:hover{color:#e53935;}
+
+/* DROPDOWN */
+.nav li ul{
+  display:none;
+  position:absolute;
+  top:100%;
+  left:0;
+  min-width:260px;
+  background:#fff;
+  box-shadow:0 10px 30px rgba(0,0,0,.25);
+  z-index:2000;
+}
+.nav li:hover>ul{display:block;}
+.nav li ul li{position:relative;}
+.nav li ul li a{
+  background:#fff;
+  color:#000;
+  padding:12px 16px;
+  display:block;
+  border-bottom:1px solid #eee;
+  text-decoration:none;
+}
+.nav li ul li a:hover{background:#000;color:#fff;}
+/* SUB-CATEGORY DROPDOWN – RIGHT SIDE, STARTS BELOW PARENT */
+/* SUB-CATEGORY DROPDOWN – OPENS TO THE RIGHT */
+.nav li ul li ul{
+  display:none;
+  position:absolute;
+  top:0;               /* ✅ aligns with parent item */
+  left:100%;           /* ✅ opens to the right */
+  min-width:260px;
+  background:#fff;
+  box-shadow:0 10px 30px rgba(0,0,0,.25);
+  border-left:1px solid #ddd;
+}
+
+
+/* Show sub-category on hover */
+.nav li ul li:hover > ul{
+  display:block;
+}
+
+.nav li ul li:hover>ul{display:block;}
+
+/* HEADER BUTTONS */
+/* Enquiry Now Button – Light Red Theme */
+.enquire-btn a{
+  background:#012d48;      /* Light blue */
+  color:#ffffff !important;/* FORCE white text */
+  padding:12px 26px;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:600;
+}
+
+/* Keep text white in all states */
+.enquire-btn a:hover,
+.enquire-btn a:active,
+.enquire-btn a:focus{
+  color:#ffffff !important;
+  outline:none;
+}
+
+
+
+
+/* ================= HERO ================= */
+/* HERO IMAGE SUPPORT */
+.hero-slide img{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;      /* IMAGE SIZING */
+  z-index:0;
+}
+
+/* Overlay gradient stays above image */
+.hero-slide::after{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:linear-gradient(
+    120deg,
+    rgba(0, 19, 41, 0.75),
+    rgba(1, 13, 24, 0.75)
+  );
+  z-index:1;
+}
+
+/* Ensure content stays above image */
+.hero-content{
+  position:relative;
+  z-index:2;
+}
+.hero-carousel{
+  position:relative;
+  height:520px;
+  overflow:hidden;
+}
+.hero-slide{
+  position:absolute;
+  inset:0;
+  opacity:0;
+  transition:opacity 1s ease;
+  background-size:cover;
+  background-position:center;
+}
+.hero-slide.active{opacity:1;}
+
+.slide-1{
+  background-image:
+    linear-gradient(120deg,rgba(13,71,161,.85),rgba(66,165,245,.85)),
+    url('https://via.placeholder.com/1920x900?text=Power+Press+Machines');
+}
+.slide-2{
+  background-image:
+    linear-gradient(120deg,rgba(21,101,192,.85),rgba(100,181,246,.85)),
+    url('https://via.placeholder.com/1920x900?text=Shearing+Machines');
+}
+.slide-3{
+  background-image:
+    linear-gradient(120deg,rgba(38,50,56,.85),rgba(84,110,122,.85)),
+    url('https://via.placeholder.com/1920x900?text=Hydraulic+Machines');
+}
+.slide-4{
+  background-image:
+    linear-gradient(120deg,rgba(26,35,126,.85),rgba(57,73,171,.85)),
+    url('https://via.placeholder.com/1920x900?text=Manual+Machines');
+}
+
+.hero-content{
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:#fff;
+}
+.hero-content h1{font-size:48px;margin-bottom:15px;}
+.hero-content p{font-size:20px;max-width:850px;margin-bottom:30px;}
+
+.hero-dots{
+  position:absolute;
+  bottom:30px;
+  width:100%;
+  text-align:center;
+}
+.hero-dot{
+  height:12px;width:12px;
+  background:#ddd;
+  border-radius:50%;
+  display:inline-block;
+  margin:0 6px;
+  cursor:pointer;
+}
+.hero-dot.active{background:#e53935;}
+
+/* ABOUT */
+.about{background:#f0f3f8;}
+.about p{
+  max-width:900px;
+  margin:auto;
+  text-align:center;
+  font-size:18px;
+}
+
+/* CONTACT */
+.contact{background:#f6f8fb;}
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:35px;
+}
+.card{
+  background:#fff;
+  padding:30px;
+  border-radius:14px;
+  box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+input,textarea{
+  width:100%;
+  padding:12px;
+  margin-bottom:15px;
+  border-radius:6px;
+  border:1px solid #ccc;
+}
+
+/* FOOTER */
+.footer{
+  background:#020228;
+  color:#bbb;
+  padding:50px 0 25px;
+}
+.footer-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:30px;
+}
+.footer strong{color:#fff;}
+.copyright{
+  text-align:center;
+  margin-top:25px;
+  font-size:14px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  .header-flex,.nav{flex-direction:column;}
+  .nav li ul,.nav li ul li ul{position:static;}
+  .hero-content h1{font-size:34px;}
+}
+/* FIX FOOTER ALIGNMENT ONLY */
+.footer .container{
+  margin-left:auto;
+  margin-right:30px;
+}
+/* SHIFT HEADER CONTENT MORE TO THE RIGHT */
+.header .container{
+  margin-left:120px;   /* increase value if needed */
+  margin-right:auto;
+}
+.hero-carousel {
+  position: relative;
+  height: 520px;
+  overflow: hidden;
+}
+
+.hero-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.hero-slide.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="header">
+<div class="container header-flex">
+  <div class="logo">
+    <img src="logo.jpg" alt="Gurumukh Machine Industries">
+  </div>
+
+ <ul class="nav">
+  <li><a href="new-index.html">Home</a></li>
+
+  <li><a href="About.html">About Us</a></li>
+  
+
+ <li>
+    <a href="Product.html">Products</a>
+    <ul>
+      <li>
+        <a href="shearingmachine.html">Shearing Machines</a>
+        <ul>
+          <li><a href="OVER CRANK.html">Over Crank Power Shearing Machine</a></li>
+          <li><a href="under-crank.html">Under Crank Power Shearing Machine</a></li>
+          
+        </ul>
+      </li>
+      
+      <li>
+        <a href="treadleshearing.html"> Treadle Shearing Machines</a>
+
+      </li>
+    <li>
+        <a href="handflypress.html"> Hand Fly Press </a>
+        </li>  
+       <li>
+           <a href="powerpress.html">Power Press Machines</a>
+        <ul>
+          <li><a href="C-TYPE.html">C-Type Power Shearing Machine</a></li>
+          <li><a href="H-TYPE.html">H-Type Power Shearing Machine</a></li>
+          
+        </ul>
+      </li>
+      <li>
+        <a href="platerolling.html"> Plate Rolling Machines</a>
+        </li>  
+     <li>
+        <a href="hydraulicmachine.html">Hydraulic Machines</a>
+        <ul>
+          <li><a href="Hydraulic Shearing Machine.html">Hydraulic Shearing Machines <br> Punching and Shearing Machine </a></li>
+          <li><a href="Hydraulic Bending Machine.html">Hydraulic Bending Machines</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="othermachines.html">Other Machines</a>
+        <ul>
+          <li><a href="MPS .html">Multi Functional <br> Punching and Shearing Machine </a></li>
+          <li><a href="SPM.html">Drill Machine SPM</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+    <li><a href="Service.html">Services</a></li>
+
+  <li><a href="Testimonial.html">Testimonials</a></li>
+
+  <li><a href="Contact.html">Contact Us</a></li>
+
+  <li class="enquire-btn"><a href="Contact.html">Enquiry Now</a></li>
+</ul>
+
+</div>
+</header>
+
+<!-- HERO -->
+<section class="hero-carousel">
+
+  <div class="hero-slide slide-1 active">
+    <img src="/Images/Home Page/home hero.png" alt="Power Press Machines">
+    <div class="hero-content">
+      <h1>Power Press Machines</h1>
+      <p>C Type • H Type </p>
+      <a class="btn">Explore Products</a>
+    </div>
+  </div>
+
+  <div class="hero-slide slide-2">
+    <img src="/Images/Shearing Machines/shearinghero.png" alt="Shearing Machines">
+    <div class="hero-content">
+      <h1>Shearing Machines</h1>
+      <p>Under Crank • Over Crank </p>
+      <a class="btn">View Range</a>
+    </div>
+  </div>
+
+  <div class="hero-slide slide-3">
+    <img src="/Images/Hydraulic Machines/hydraulic hero 1.jpg" alt="Hydraulic Machines">
+    <div class="hero-content">
+      <h1>Hydraulic Shearing Machines</h1>
+      <p>Bending </p>
+      <a class="btn">Know More</a>
+    </div>
+  </div>
+
+  <div class="hero-slide slide-4">
+    <img src="/Images/Other Machine/other hero.png" alt="Other Machines">
+    <div class="hero-content">
+      <h1>Other Machines</h1>
+      <p>Drill Machine • Punching  </p>
+      <a class="btn">Get Details</a>
+    </div>
+  </div>
+
+  <div class="hero-dots">
+    <span class="hero-dot active" onclick="showSlide(0)"></span>
+    <span class="hero-dot" onclick="showSlide(1)"></span>
+    <span class="hero-dot" onclick="showSlide(2)"></span>
+    <span class="hero-dot" onclick="showSlide(3)"></span>
+  </div>
+
+</section>
+<script>
+let currentSlide = 0;
+const slides = document.querySelectorAll(".hero-slide");
+const dots = document.querySelectorAll(".hero-dot");
+const totalSlides = slides.length;
+
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    slide.classList.remove("active");
+    dots[i].classList.remove("active");
+  });
+
+  slides[index].classList.add("active");
+  dots[index].classList.add("active");
+  currentSlide = index;
+}
+
+// Auto play
+setInterval(() => {
+  currentSlide = (currentSlide + 1) % totalSlides;
+  showSlide(currentSlide);
+}, 4000); // 4 seconds
+</script>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gurumukh Machine Industries</title>
+
+<style>
+/* =========================
+   GLOBAL STYLES
+========================= */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f4f6f9;
+  color: #1e293b;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.section {
+  padding: 70px 0;
+}
+
+h2 {
+  text-align: center;
+  font-size: 34px;
+  margin-bottom: 15px;
+  color: #0f172a;
+}
+
+.section p.subtitle {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  color: #475569;
+  font-size: 17px;
+}
+
+/* =========================
+   COMPANY HIGHLIGHTS
+========================= */
+.highlights {
+  background: #f6f8fb;
+}
+
+.highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.highlight-card {
+  background: #fff;
+  padding: 35px 25px;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 8px 30px rgba(15,23,42,0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-bottom: 5px solid #2563eb;
+}
+
+.highlight-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(15,23,42,0.15);
+}
+
+.highlight-card h3 {
+  color: #2563eb;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+/* =========================
+   WHY CHOOSE US – EXPERT CSS
+========================= */
+.why-choose {
+  background: linear-gradient(135deg, #e3eaf3, #f8fafc);
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.why-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 34px 26px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(15,23,42,0.08);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.why-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  opacity: 0;
+  transition: opacity 0.35s;
+}
+
+.why-card:hover::before {
+  opacity: 0.05;
+}
+
+.why-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 18px 45px rgba(15,23,42,0.18);
+}
+
+.why-card span {
+  font-size: 42px;
+  color: #2563eb;
+  display: inline-block;
+  margin-bottom: 14px;
+}
+
+.why-card h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #0f172a;
+}
+
+.why-card p {
+  font-size: 16px;
+  color: #475569;
+  line-height: 1.6;
+}
+
+
+/* =========================
+   PRODUCT CATEGORIES
+========================= */
+.product-categories {
+  background: #fff;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 30px;
+  margin-top: 45px;
+}
+
+.category-card {
+  background: #f6f8fb;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(15,23,42,0.08);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.category-card:hover {
+  transform: translateY(-6px);
+}
+
+.category-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.category-card h3 {
+  padding: 18px;
+  color: #2563eb;
+  font-size: 20px;
+}
+
+/* =========================
+   INDUSTRIES WE SERVE
+========================= */
+.industries {
+  background: #f6f8fb;
+}
+
+.industries-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.industry-card {
+  background: #fff;
+  padding: 22px;
+  text-align: center;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(15,23,42,0.08);
+}
+
+/* =========================
+   STATS
+========================= */
+.stats {
+  background: #e3eaf3;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 30px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.stat-card {
+  background: #fff;
+  padding: 35px 15px;
+  text-align: center;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(15,23,42,0.08);
+}
+
+.stat-number {
+  font-size: 40px;
+  color: #2563eb;
+  font-weight: 700;
+}
+
+.stat-label {
+  margin-top: 8px;
+  font-size: 16px;
+}
+
+/* =========================
+   CTA
+========================= */
+.cta {
+  background: linear-gradient(90deg,#0f172a 60%,#1e293b 100%);
+  color: #fff;
+}
+
+.cta-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.cta-btn {
+  background: #fff;
+  color: #0e1420;
+  padding: 16px 40px;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.cta-btn:hover {
+  background: #2563eb;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+/* =========================
+   FOOTER
+========================= */
+.footer {
+  background: #0f172a;
+  color: #cbd5f5;
+  padding: 40px 0 20px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.footer strong {
+  font-size: 18px;
+  color: #fff;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 14px;
+  color: #94a3b8;
+}
+/* ================= TOP ACTION BAR ================= */
+.top-action-bar {
+  background: #0f2a44; /* Dark industrial blue */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 14px 10px;
+}
+
+.top-action-bar a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.top-action-bar i {
+  color: #ff4d4d; /* Red icon */
+  font-size: 18px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .top-action-bar {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+    
+</style>
+</head>
+
+<body>
+   
+
+<!-- COMPANY HIGHLIGHTS -->
+<section class="section highlights">
+  <div class="container">
+    <h2>Company Highlights</h2>
+    <p class="subtitle">A legacy of quality, precision and trust in industrial machinery.</p>
+
+    <div class="highlights-grid">
+      <div class="highlight-card">
+        <h3>30+ Years Experience</h3>
+        <p>Trusted industrial machinery manufacturer since 1985.</p>
+      </div>
+      <div class="highlight-card">
+        <h3>Quality Assurance</h3>
+        <p>ISO-certified processes with strict quality control.</p>
+      </div>
+      <div class="highlight-card">
+        <h3>Pan-India Service</h3>
+        <p>Strong service network across India.</p>
+      </div>
+      <div class="highlight-card">
+        <h3>Custom Solutions</h3>
+        <p>Machines tailored to your production needs.</p>
+      </div>
+      <div class="highlight-card">
+        <h3>Custom Solutions</h3>
+        <p>Machines tailored to your production needs.</p>
+      </div>
+      <div class="highlight-card">
+        <h3> Solutions</h3>
+        <p>Machines tailored to your production needs.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="section why-choose">
+  <div class="container">
+    <h2>Why Choose Us</h2>
+
+    <div class="why-grid">
+      <div class="why-card">
+        <span>✔</span>
+        <h3>Robust Machines</h3>
+        <p>Heavy-duty, reliable and engineered for long service life.</p>
+      </div>
+
+      <div class="why-card">
+        <span>✔</span>
+        <h3>Expert Engineers</h3>
+        <p>Highly skilled team with decades of manufacturing expertise.</p>
+      </div>
+
+      <div class="why-card">
+        <span>✔</span>
+        <h3>After-Sales Support</h3>
+        <p>Quick service, spare parts availability and technical guidance.</p>
+      </div>
+
+      <div class="why-card">
+        <span>✔</span>
+        <h3>Competitive Pricing</h3>
+        <p>Best quality machines at industry-leading prices.</p>
+      </div>
+
+      <div class="why-card">
+        <span>✔</span>
+        <h3>Safety & Efficiency</h3>
+        <p>Designed with operator safety and productivity in mind.</p>
+      </div>
+      <div class="why-card">
+        <span>✔</span>
+        <h3>Machines & Efficiency</h3>
+        <p>Designed with operator safety and productivity in mind.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- PRODUCT CATEGORIES -->
+<section class="section product-categories">
+  <div class="container">
+    <h2>Product Categories</h2>
+
+    <div class="categories-grid">
+      <div class="category-card">
+        <img src="/Images/Home Page/shearing machine-HP.png" alt="Shearing Machines">
+        <h3>Shearing Machines</h3>
+      </div>
+      <div class="category-card">
+        <img src="/Images/Home Page/TREADLE SHEARING MACHINE-HP.png" alt="Treadleshearing Machines">
+        <h3>treadleshearing</h3>
+      </div>
+       <div class="category-card">
+        <img src="/Images/Home Page/HAND FLY PRESS-HP.png" alt="Handflypress Machines">
+        <h3>Handflypress Machines</h3>
+          </div>
+      <div class="category-card">
+        <img src="/Images/Home Page/power press machines-HP.png" alt="Power Press Machines">
+        <h3>Power Press Machines</h3>
+      </div>
+      
+      <div class="category-card">
+        <img src="/Images/Home Page/HYDRAULIC MACHINES images-HP.png" alt="Hydraulic Machines">
+        <h3>Hydraulic Machines</h3>
+      </div>
+          <div class="category-card">
+        <img src="/Images/Home Page/PLATE ROLLING MACHINE-HP.png" alt="Plate Rolling Machines">
+        <h3>Plate Rolling Machines</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INDUSTRIES -->
+<section class="section industries">
+  <div class="container">
+    <h2>Industries We Serve</h2>
+    <div class="industries-grid">
+      <div class="industry-card">Automotive</div>
+      <div class="industry-card">Sheet Metal</div>
+      <div class="industry-card">Electrical</div>
+      <div class="industry-card">Construction</div>
+      <div class="industry-card">Hardware</div>
+      <div class="industry-card">Job Work</div>
+      <div class="industry-card">Fabrication</div>
+      <div class="industry-card">Engineering</div>
+
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="section stats">
+  <div class="container stats-grid">
+    <div class="stat-card">
+      <div class="stat-number">5000+</div>
+      <div class="stat-label">Machines Delivered</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">1000+</div>
+      <div class="stat-label">Clients Served</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">40</div>
+      <div class="stat-label">Years Experience</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">20+</div>
+      <div class="stat-label">States Covered</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- CTA -->
+<section class="section cta">
+  <div class="container cta-flex">
+    <div>
+      <h2 style="color:#fff;">Ready to Upgrade Your Production?</h2>
+      <p>Contact us today for the right industrial solution.</p>
+    </div>
+    <a href="contact.html" class="cta-btn">Get in Touch</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <strong>Gurumukh Machine Industries</strong><br>
+      Industrial Machinery Manufacturer
+    </div>
+    <div>
+      Phone: +91 8360832328<br>
+      Email: info@gurumukhmachines.com
+    </div>
+  </div>
+  <div class="copyright">
+    © 2025 Gurumukh Machine Industries | Developed by Bizon Digital
+  </div>
+</footer>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+<!-- TOP ACTION BAR -->
+<div class="top-action-bar">
+  <a href="tel:+918360832328">
+    <i class="fa-solid fa-phone"></i> Call
+  </a>
+
+  <a href="https://wa.me/918360832328" target="_blank">
+    <i class="fa-brands fa-whatsapp"></i> WhatsApp
+  </a>
+
+  <a href="Contact.html">
+    <i class="fa-solid fa-file-lines"></i> Get Quote
+  </a>
+</div>
+
+
+
+   
+
+
+</body>
+</html>

@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- ================= SEO ================= -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Gurmukh Machine Industries – Trusted manufacturer of sheet metal & fabrication machinery since 1981. Power Press, Shearing Machines, Press Brakes & industrial services across India.">
+    <meta name="keywords"
+        content="Power Press Manufacturer, Shearing Machine India, Sheet Metal Machinery, Industrial Machines India">
+    <meta name="author" content="Gurmukh Machine Industries">
+
+    <title>About Us | Gurmukh Machine Industries</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        /* ================= RESET ================= */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+
+        /* ================= GLOBAL ================= */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #f2f2f2;
+            color: #333;
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 1300px;
+            margin: auto;
+            padding: 70px 20px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            margin-bottom: 15px
+        }
+
+        h2 {
+            font-size: 32px;
+            color: #0f2a44;
+            border-left: 6px solid #c62828;
+            padding-left: 15px;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 15px
+        }
+
+        /* ================= HEADER CSS ================= */
+        /* QUICK CONTACT TRUST BAR */
+        .quick-contact-bar {
+            background: #0f2a44;
+            /* Industrial Blue */
+            color: #ffffff;
+            padding: 10px 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        .quick-contact-container {
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            font-size: 14px;
+        }
+
+        .contact-info span {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        @media (max-width: 768px) {
+            .quick-contact-container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .contact-info {
+                justify-content: center;
+            }
+        }
+
+        /* HEADER */
+        .header {
+            background: #ffffff;
+            padding: 16px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid #ddd;
+            box-shadow: 0 2px 12px rgba(15, 23, 42, 0.06);
+        }
+
+        .header-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header .container {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 1200px;
+            padding: 0 20px;
+        }
+
+        .logo img {
+            height: 55px;
+            margin-right: 20px;
+        }
+
+        /* NAV */
+        .nav {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav>li {
+            position: relative;
+        }
+
+        .nav>li>a {
+            color: #000;
+            padding: 12px 18px;
+            text-decoration: none;
+            font-weight: 500;
+            display: block;
+        }
+
+        .nav>li>a:hover {
+            color: #e53935;
+        }
+
+        /* DROPDOWN */
+        .nav li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            min-width: 260px;
+            background: #fff;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, .25);
+            z-index: 2000;
+            list-style: none;
+            padding: 0;
+        }
+
+        .nav li:hover>ul {
+            display: block;
+        }
+
+        .nav li ul li {
+            position: relative;
+        }
+
+        .nav li ul li a {
+            background: #fff;
+            color: #000;
+            padding: 12px 16px;
+            display: block;
+            border-bottom: 1px solid #eee;
+            text-decoration: none;
+        }
+
+        .nav li ul li a:hover {
+            background: #000;
+            color: #fff;
+        }
+
+        /* SUB-CATEGORY */
+        .nav li ul li ul {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 100%;
+            min-width: 260px;
+            background: #fff;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, .25);
+            border-left: 1px solid #ddd;
+        }
+
+        .nav li ul li:hover>ul {
+            display: block;
+        }
+
+        /* BUTTONS */
+        .enquire-btn a {
+            background: #012035;
+            color: #ffffff !important;
+            padding: 12px 26px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .enquire-btn a:hover {
+            color: #ffffff !important;
+            outline: none;
+        }
+
+        /* Header Responsive */
+        @media(max-width:768px) {
+
+            .header-flex,
+            .nav {
+                flex-direction: column;
+            }
+
+            .nav li ul,
+            .nav li ul li ul {
+                position: static;
+            }
+        }
+
+        /* ================= HERO ================= */
+        .hero {
+            background: linear-gradient(to right, #0f2a44, #000);
+            color: #fff;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.1fr 1.3fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .hero img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .tag {
+            color: #ff5252;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .hero-title {
+            font-size: 44px;
+            font-weight: 800;
+        }
+
+        .hero-title span {
+            color: #ff5252
+        }
+
+        /* ================= SECTION ================= */
+        .section {
+            background: #fff;
+            margin-top: 50px;
+        }
+
+        /* ================= IMAGE + TEXT ================= */
+        .image-text {
+            display: grid;
+            grid-template-columns: 1fr 1.4fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .image-text img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        /* ================= PRODUCT GRID ================= */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+        }
+
+        .product-card {
+            background: #f9f9f9;
+            padding: 20px;
+            border-top: 4px solid #0f2a44;
+            border-radius: 8px;
+        }
+
+        /* ================= UNIQUE ================= */
+        .unique-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .unique-box {
+            background: #f4f6f8;
+            padding: 22px;
+            border-left: 5px solid #c62828;
+        }
+
+        /* ================= SASTI ================= */
+        .sasti {
+            background: linear-gradient(to right, #0f2a44, #111);
+            color: #fff;
+            padding: 50px;
+            border-radius: 10px;
+        }
+
+        .sasti h2 {
+            color: #fff;
+            border-color: #ff5252
+        }
+
+        /* ================= MISSION ================= */
+        .mv-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .mv-box {
+            background: #f1f1f1;
+            padding: 30px;
+            border-top: 5px solid #0f2a44;
+        }
+
+        /* ================= SCROLL ANIMATION ================= */
+        .reveal {
+            opacity: 0;
+            transform: translateY(60px);
+            transition: all 0.8s ease;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ================= STICKY CTA ================= */
+        .sticky-cta {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: #0f2a44;
+            display: flex;
+            justify-content: space-around;
+            padding: 12px;
+            z-index: 999;
+        }
+
+        .sticky-cta a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .sticky-cta i {
+            color: #ff5252;
+            margin-right: 6px
+        }
+
+        /* ================= RESPONSIVE ================= */
+        @media(max-width:900px) {
+
+            .hero-grid,
+            .image-text {
+                grid-template-columns: 1fr
+            }
+
+            .hero-title {
+                font-size: 32px
+            }
+        }
+
+        /* ================= FOOTER ================= */
+        .footer {
+            background: #0f172a;
+            color: #cbd5f5;
+            padding: 40px 0 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .footer strong {
+            font-size: 18px;
+            color: #fff;
+        }
+
+        .copyright {
+            text-align: center;
+            margin-top: 25px;
+            font-size: 14px;
+            color: #94a3b8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- QUICK CONTACT BAR -->
+    <div class="quick-contact-bar">
+        <div class="quick-contact-container">
+            <div class="contact-info">
+                <span>📞 Call: +91 836 083 2328</span>
+                <span>✉️ Email: info@gurumukhmachines.com</span>
+                <span>📍 Location: Plot no 288, Industrial Focal Point, Mehta Road Amritsar-143001</span>
+            </div>
+        </div>
+    </div>
+
+   <!-- HEADER -->
+<header class="header">
+<div class="container header-flex">
+  <div class="logo">
+    <img src="logo.jpg" alt="Gurumukh Machine Industries">
+  </div>
+
+ <ul class="nav">
+  <li><a href="new-index.html">Home</a></li>
+
+  <li><a href="About.html">About Us</a></li>
+  
+
+ <li>
+    <a href="Product.html">Products</a>
+    <ul>
+      <li>
+        <a href="shearingmachine.html">Shearing Machines</a>
+        <ul>
+          <li><a href="OVER CRANK.html">Over Crank Power Shearing Machine</a></li>
+          <li><a href="under-crank.html">Under Crank Power Shearing Machine</a></li>
+          
+        </ul>
+      </li>
+      
+      <li>
+        <a href="treadleshearing.html"> Treadle Shearing Machines</a>
+
+      </li>
+    <li>
+        <a href="handflypress.html"> Hand Fly Press </a>
+        </li>  
+       <li>
+           <a href="powerpress.html">Power Press Machines</a>
+        <ul>
+          <li><a href="C-TYPE.html">C-Type Power Shearing Machine</a></li>
+          <li><a href="H-TYPE.html">H-Type Power Shearing Machine</a></li>
+          
+        </ul>
+      </li>
+      <li>
+        <a href="platerolling.html"> Plate Rolling Machines</a>
+        </li>  
+     <li>
+        <a href="hydraulicmachine.html">Hydraulic Machines</a>
+        <ul>
+          <li><a href="Hydraulic Shearing Machine.html">Hydraulic Shearing Machines <br> Punching and Shearing Machine </a></li>
+          <li><a href="Hydraulic Bending Machine.html">Hydraulic Bending Machines</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="othermachines.html">Other Machines</a>
+        <ul>
+          <li><a href="MPS .html">Multi Functional <br> Punching and Shearing Machine </a></li>
+          <li><a href="SPM.html">Drill Machine SPM</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+    <li><a href="Service.html">Services</a></li>
+
+  <li><a href="Testimonial.html">Testimonials</a></li>
+
+  <li><a href="Contact.html">Contact Us</a></li>
+
+  <li class="enquire-btn"><a href="Contact.html">Enquiry Now</a></li>
+</ul>
+
+</div>
+</header>
+
+    <!-- ================= HERO ================= -->
+    <section class="hero reveal">
+        <div class="container hero-grid">
+            <img src="/Images/About-Us/about us hero.png" loading="lazy" alt="Factory Image">
+            <div>
+                <div class="tag">ABOUT GURMUKH MACHINE INDUSTRIES</div>
+                <h1 class="hero-title">Engineering <span>Trust</span> Since 1981</h1>
+                <p>Gurmukh Machine Industries is a name built on trust, craftsmanship and engineering excellence.
+                    Established in 1981, our journey began as a small workshop with a single vision — to empower Indian
+                    manufacturing with reliable and affordable machines.</p>
+                <p>Over four decades later, that same vision continues to guide us, strengthened by modern technology
+                    and innovation.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= WHO WE ARE ================= -->
+    <section class="section reveal">
+        <div class="container image-text">
+            <img src="/Images/About-Us/about us.png" loading="lazy" alt="Manufacturing Unit">
+            <div>
+                <h2>Who We Are</h2>
+                <p>From humble beginnings in Amritsar, Punjab, we have grown into one of India’s most respected
+                    manufacturers of Sheet Metal & Fabrication Machinery.</p>
+                <p>Our machines operate across workshops, MSMEs, heavy industries, government sectors and export
+                    markets.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= PRODUCTS ================= -->
+    <section class="section reveal">
+        <div class="container">
+            <h2>Our Machinery Range</h2>
+            <div class="product-grid">
+                <div class="product-card">Power Shearing Machines</div>
+                <div class="product-card">Power Presses (C / H / Pneumatic)</div>
+                <div class="product-card">Treadle Shearing Machines</div>
+                <div class="product-card">Fly & Hand Press Machines</div>
+                <div class="product-card">Multipurpose Punching & Shearing</div>
+                <div class="product-card">Hydraulic Press Brake</div>
+                <div class="product-card">Plate Rolling Machines</div>
+                <div class="product-card">Industrial Drill & SPM</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= MANUFACTURING ================= -->
+    <section class="section reveal">
+        <div class="container image-text">
+            <img src="factory-machine3.jpg" loading="lazy" alt="CNC Machine">
+            <div>
+                <h2>Our Manufacturing Excellence</h2>
+                <ul>
+                    <li>Advanced machining & fabrication</li>
+                    <li>In-house quality control</li>
+                    <li>D2 Tool Steel components</li>
+                    <li>CNC accuracy machining</li>
+                    <li>Custom machine development</li>
+                </ul>
+                <p>We believe machines should be built for decades, not years.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= SASTI ================= -->
+    <section class="section reveal">
+        <div class="container">
+            <div class="sasti">
+                <h2>SASTI MACHINE – A Service Revolution</h2>
+                <p>India’s first subscription-based industrial machine service model.</p>
+                <ul>
+                    <li>Service + Repair + Installation + AMC</li>
+                    <li>Guaranteed fast response</li>
+                    <li>Original spare parts</li>
+                    <li>Zero downtime assurance</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= MISSION ================= -->
+    <section class="section reveal">
+        <div class="container">
+            <h2>Mission, Vision & Promise</h2>
+            <div class="mv-grid">
+                <div class="mv-box">
+                    <h3>Mission</h3>
+                    <p>Empower Indian manufacturing.</p>
+                </div>
+                <div class="mv-box">
+                    <h3>Vision</h3>
+                    <p>India’s most trusted industrial machine brand.</p>
+                </div>
+                <div class="mv-box">
+                    <h3>Promise</h3>
+                    <p>Quality. Performance. Reliability.</p>
+                </div>
+            </div>
+            <p><strong>Message to Customers:</strong> Every machine carries our reputation — and we stand behind it with
+                pride.</p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <strong>Gurumukh Machine Industries</strong><br>
+                Industrial Machinery Manufacturer
+            </div>
+            <div>
+                Phone: +91 836 083 2328<br>
+                Email: info@gurumukhmachines.com
+            </div>
+        </div>
+        <div class="copyright">
+            © 2025 Gurumukh Machine Industries | Developed by Bizon Digital
+        </div>
+    </footer>
+
+    <!-- ================= STICKY CTA ================= -->
+    <div class="sticky-cta">
+        <a href="tel:+918360832328"><i class="fa-solid fa-phone"></i>Call</a>
+        <a href="https://wa.me/918360832328"><i class="fa-brands fa-whatsapp"></i>WhatsApp</a>
+        <a href="Contact.html"><i class="fa-solid fa-file-lines"></i>Get Quote</a>
+    </div>
+
+    <!-- ================= JS ================= -->
+    <script>
+        const reveals = document.querySelectorAll('.reveal');
+        window.addEventListener('scroll', () => {
+            reveals.forEach(r => {
+                const pos = r.getBoundingClientRect().top;
+                if (pos < window.innerHeight - 100) {
+                    r.classList.add('active');
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

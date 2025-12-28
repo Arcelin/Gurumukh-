@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Hand Fly Press | Gurumukh Machine Industries</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;}
+body{background:#f6f8fb;color:#333;line-height:1.7;}
+.container{width:90%;max-width:1200px;margin:auto;}
+.section{padding:70px 0;}
+h1,h2{color:#111;margin-bottom:20px}
+p{margin-bottom:14px}
+
+/* HERO */
+.hero{
+  min-height:520px;
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#fff;
+  text-align:center;
+  overflow:hidden;
+}
+.hero img{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  z-index:1;
+}
+.hero::before{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:linear-gradient(120deg, #0f2a4466, rgba(38, 50, 56, .85));;
+  z-index:2;
+}
+.hero-inner{
+  position:relative;
+  z-index:3;
+  max-width:900px;
+  padding:20px;
+}
+.hero-text h1{font-size:46px;}
+.hero-text p{font-size:18px;max-width:740px;margin:auto;}
+
+/* INFO BOX */
+.info-box{
+  display:grid;
+  grid-template-columns:1fr 2fr;
+  gap:40px;
+  background:#fff;
+  padding:40px;
+  border-radius:14px;
+  box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+.info-box img{width:100%;border-radius:12px}
+
+@media(max-width:768px){
+  .info-box{grid-template-columns:1fr}
+}
+
+ /* ================= HEADER CSS ================= */
+    /* QUICK CONTACT TRUST BAR */
+    .quick-contact-bar {
+      background: #0f2a44;
+      /* Industrial Blue */
+      color: #ffffff;
+      padding: 10px 20px;
+      font-family: Arial, sans-serif;
+    }
+
+    .quick-contact-container {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .contact-info-header {
+      /* Renamed to avoid conflict with page class */
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      font-size: 14px;
+    }
+
+    .contact-info-header span {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    @media (max-width: 768px) {
+      .quick-contact-container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .contact-info-header {
+        justify-content: center;
+      }
+    }
+    /* ================= FOOTER ================= */
+    .footer {
+      background: #0f172a;
+      color: #cbd5f5;
+      padding: 40px 0 20px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .footer strong {
+      font-size: 18px;
+      color: #fff;
+    }
+
+    .copyright {
+      text-align: center;
+      margin-top: 25px;
+      font-size: 14px;
+      color: #94a3b8;
+    }
+     /* ================= HEADER CSS ================= */
+    /* QUICK CONTACT TRUST BAR */
+    .quick-contact-bar {
+      background: #0f2a44;
+      /* Industrial Blue */
+      color: #ffffff;
+      padding: 10px 20px;
+      font-family: Arial, sans-serif;
+    }
+
+    .quick-contact-container {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .contact-info-header {
+      /* Renamed to avoid conflict with page class */
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      font-size: 14px;
+    }
+
+    .contact-info-header span {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    @media (max-width: 768px) {
+      .quick-contact-container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .contact-info-header {
+        justify-content: center;
+      }
+    }
+
+    /* HEADER */
+    .header {
+      background: #ffffff;
+      padding: 16px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid #ddd;
+      box-shadow: 0 2px 12px rgba(15, 23, 42, 0.06);
+    }
+
+    .header-flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header .container {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 1200px;
+      padding: 0 20px;
+    }
+
+    .logo img {
+      height: 55px;
+      margin-right: 20px;
+    }
+
+    /* NAV */
+    .nav {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav>li {
+      position: relative;
+    }
+
+    .nav>li>a {
+      color: #000;
+      padding: 12px 18px;
+      text-decoration: none;
+      font-weight: 500;
+      display: block;
+    }
+
+    .nav>li>a:hover {
+      color: #e53935;
+    }
+
+    /* DROPDOWN */
+    .nav li ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      min-width: 260px;
+      background: #fff;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, .25);
+      z-index: 2000;
+      list-style: none;
+      padding: 0;
+    }
+
+    .nav li:hover>ul {
+      display: block;
+    }
+
+    .nav li ul li {
+      position: relative;
+    }
+
+    .nav li ul li a {
+      background: #fff;
+      color: #000;
+      padding: 12px 16px;
+      display: block;
+      border-bottom: 1px solid #eee;
+      text-decoration: none;
+    }
+
+    .nav li ul li a:hover {
+      background: #000;
+      color: #fff;
+    }
+
+    /* SUB-CATEGORY */
+    .nav li ul li ul {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 100%;
+      min-width: 260px;
+      background: #fff;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, .25);
+      border-left: 1px solid #ddd;
+    }
+
+    .nav li ul li:hover>ul {
+      display: block;
+    }
+
+    /* BUTTONS */
+    .enquire-btn a {
+      background: #02253c;
+      color: #ffffff !important;
+      padding: 12px 26px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .enquire-btn a:hover {
+      color: #ffffff !important;
+      outline: none;
+    }
+
+    /* Header Responsive */
+    @media(max-width:768px) {
+
+      .header-flex,
+      .nav {
+        flex-direction: column;
+      }
+
+      .nav li ul,
+      .nav li ul li ul {
+        position: static;
+      }
+    }
+
+/* ================= FOOTER ================= */
+    .footer {
+      background: #0f172a;
+      color: #cbd5f5;
+      padding: 40px 0 20px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .footer strong {
+      font-size: 18px;
+      color: #fff;
+    }
+
+    .copyright {
+      text-align: center;
+      margin-top: 25px;
+      font-size: 14px;
+      color: #94a3b8;
+    }
+/* QUICK CONTACT TRUST BAR */
+    .quick-contact-bar {
+      background: #0f2a44;
+      /* Industrial Blue */
+      color: #ffffff;
+      padding: 10px 20px;
+      font-family: Arial, sans-serif;
+    }
+
+    .quick-contact-container {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .contact-info-header {
+      /* Renamed to avoid conflict with page class */
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      font-size: 14px;
+    }
+
+    .contact-info-header span {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    @media (max-width: 768px) {
+      .quick-contact-container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .contact-info-header {
+        justify-content: center;
+      }
+    }
+    /* VIDEO SECTION STYLES */
+.product-video {
+  max-width: 900px;
+  margin: 40px auto;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+.product-video iframe {
+  width: 100%;
+  height: 480px;
+}
+@media (max-width:768px){
+  .product-video iframe {
+    height: 260px;
+  }
+}
+
+</style>
+
+
+</head>
+
+<body>
+  <!-- QUICK CONTACT BAR -->
+  <div class="quick-contact-bar">
+    <div class="quick-contact-container">
+      <div class="contact-info-header"> <!-- Renamed -->
+        <span>📞 Call: +91 8360832328</span>
+        <span>✉️ Email: info@gurumukhmachines.com</span>
+        <span>📍 Location: Plot no 288, Industrial Focal Point, Mehta Road Amritsar-143001</span>
+      </div>
+    </div>
+  </div>  
+
+  <!-- HEADER -->
+<header class="header">
+<div class="container header-flex">
+  <div class="logo">
+    <img src="logo.jpg" alt="Gurumukh Machine Industries">
+  </div>
+
+ <ul class="nav">
+  <li><a href="new-index.html">Home</a></li>
+
+  <li><a href="About.html">About Us</a></li>
+  
+
+ <li>
+    <a href="Product.html">Products</a>
+    <ul>
+      <li>
+        <a href="shearingmachine.html">Shearing Machines</a>
+        <ul>
+          <li><a href="OVER CRANK.html">Over Crank Power Shearing Machine</a></li>
+          <li><a href="under-crank.html">Under Crank Power Shearing Machine</a></li>
+          
+        </ul>
+      </li>
+      
+      <li>
+        <a href="treadleshearing.html"> Treadle Shearing Machines</a>
+
+      </li>
+    <li>
+        <a href="handflypress.html"> Hand Fly Press </a>
+        </li>  
+       <li>
+           <a href="powerpress.html">Power Press Machines</a>
+        <ul>
+          <li><a href="C-TYPE.html">C-Type Power Shearing Machine</a></li>
+          <li><a href="H-TYPE.html">H-Type Power Shearing Machine</a></li>
+          
+        </ul>
+      </li>
+      <li>
+        <a href="platerolling.html"> Plate Rolling Machines</a>
+        </li>  
+     <li>
+        <a href="hydraulicmachine.html">Hydraulic Machines</a>
+        <ul>
+          <li><a href="Hydraulic Shearing Machine.html">Hydraulic Shearing Machines <br> Punching and Shearing Machine </a></li>
+          <li><a href="Hydraulic Bending Machine.html">Hydraulic Bending Machines</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="othermachines.html">Other Machines</a>
+        <ul>
+          <li><a href="MPS .html">Multi Functional <br> Punching and Shearing Machine </a></li>
+          <li><a href="SPM.html">Drill Machine SPM</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+    <li><a href="Service.html">Services</a></li>
+
+  <li><a href="Testimonial.html">Testimonials</a></li>
+
+  <li><a href="Contact.html">Contact Us</a></li>
+
+  <li class="enquire-btn"><a href="Contact.html">Enquiry Now</a></li>
+</ul>
+
+</div>
+</header>
+ <!-- ================= MAIN PRODUCT PAGE ================= -->
+<section class="hero">
+  <img 
+    src="/Images/Handfly Machine/fly press hero.jpg"
+    alt="Hand Fly Press Machine in Industrial Workshop">
+  <div class="hero-inner hero-text">
+    <h1>Hand Fly Press</h1>
+    <p>
+      Manual press machines designed for precision pressing, punching,
+      bending and forming operations in workshops and small manufacturing units.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+<div class="container info-box">
+
+<img 
+  src="/Images/Handfly Machine/fly press 1.jpg" 
+  alt="Hand Fly Press Machine">
+
+<div>
+<p>
+The Hand Fly Press is a manual press machine designed for precision pressing,
+punching, bending and forming operations in workshops and small manufacturing
+units. Known for its simple mechanism, strong construction and reliable
+performance, the fly press is widely used where controlled force and accuracy
+are required.
+</p>
+
+<p>
+Built with a heavy-duty cast steel or fabricated steel body, the machine provides
+excellent structural rigidity and long service life. The flywheel-driven screw
+mechanism allows the operator to apply uniform and controlled pressure, ensuring
+consistent results across repetitive operations.
+</p>
+
+<p>
+Hand Fly Press machines are commonly used for sheet metal forming, punching,
+embossing, bending, riveting, assembly work and die operations. Their manual
+operation offers flexibility and precise control.
+</p>
+
+<p>
+Manufactured with a focus on durability, accuracy and ease of use, Hand / Fly
+Press machines from Gurumukh Machine Industries are trusted by workshops, tool
+rooms and small production units across India.
+</p>
+
+<h2>Size & Specifications</h2>
+
+<p><b>Standard Sizes:</b> No. 2, No. 4, No. 6, No. 8, No. 10 and No. 12</p>
+<p><b>Models Available:</b> Standard Body, Deep Body and Double Body</p>
+<p><b>Applications:</b> Punching, bending, embossing, riveting, pressing</p>
+<p><b>Construction:</b> Heavy-duty steel or cast body</p>
+<p><b>Operation:</b> Manual flywheel-driven screw mechanism</p>
+
+</div>
+</div>
+</section>
+<!-- FLY HAND PRESS VIDEO SECTION -->
+<section class="section">
+  <div class="container">
+    <h2> Hand Fly Press – Working Video</h2>
+    <div class="product-video">
+      <iframe
+        src="https://www.youtube.com/embed/hbV3UpKEB70?rel=0"
+        title="Hand  Fly Press Working Video"
+        loading="lazy"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>Gurumukh Machine Industries</strong><br>
+        Industrial Machinery Manufacturer
+      </div>
+      <div>
+        Phone: +91 836 083 2328<br>
+        Email: info@gurumukhmachines.com
+      </div>
+    </div>
+    <div class="copyright">
+      © 2025 Gurumukh Machine Industries | Developed by Bizon Digital
+    </div>
+  </footer>
+</body>
+</html>

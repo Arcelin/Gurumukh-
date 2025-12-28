@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>H-Type Power Press</title>
+
+<style>
+/* ================================
+   GLOBAL RESET
+================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* ================================
+   H-TYPE POWER PRESS – DETAIL PAGE
+================================ */
+
+/* Section Background */
+.sub-page.section {
+    background: linear-gradient(135deg, #f4f7fb, #e9eef5);
+    padding: 80px 20px;
+}
+
+/* Container Box */
+.sub-box {
+    max-width: 1150px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 50px;
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 50px;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Decorative Accent */
+.sub-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: 100%;
+    background: linear-gradient(180deg, #0f2a44, #d62828);
+}
+
+/* Image Styling */
+.sub-box img {
+    width: 100%;
+    border-radius: 14px;
+    object-fit: cover;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.sub-box img:hover {
+    transform: scale(1.04);
+    box-shadow: 0 22px 45px rgba(0, 0, 0, 0.2);
+}
+
+/* Content Area */
+.sub-box > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Heading */
+.sub-box h2 {
+    font-size: 36px;
+    font-weight: 800;
+    color: #0f2a44;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+/* Heading Underline */
+.sub-box h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 70px;
+    height: 4px;
+    background: linear-gradient(to right, #d62828, #0f2a44);
+    border-radius: 2px;
+}
+
+/* Paragraph Styling */
+.sub-box p {
+    font-size: 16.5px;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 18px;
+}
+
+/* Back Button */
+.back {
+    margin-top: 30px;
+    align-self: flex-start;
+    padding: 12px 26px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #ffffff;
+    background: linear-gradient(135deg, #0f2a44, #1b4f72);
+    border-radius: 50px;
+    transition: all 0.35s ease;
+    box-shadow: 0 8px 20px rgba(15, 42, 68, 0.3);
+}
+
+.back:hover {
+    background: linear-gradient(135deg, #d62828, #a4161a);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px rgba(214, 40, 40, 0.4);
+}
+
+/* ================================
+   RESPONSIVE DESIGN
+================================ */
+
+@media (max-width: 992px) {
+    .sub-box {
+        grid-template-columns: 1fr;
+        padding: 35px;
+    }
+
+    .sub-box h2 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .sub-page.section {
+        padding: 60px 15px;
+    }
+
+    .sub-box {
+        padding: 25px;
+    }
+
+    .sub-box h2 {
+        font-size: 26px;
+    }
+
+    .sub-box p {
+        font-size: 15px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- ================================
+     H-TYPE POWER PRESS SECTION
+================================ -->
+<div id="h-type" class="sub-page section">
+    <div class="container sub-box">
+
+        <img src="/Images/Main-Sub-Categories renamed (1)/h type power press machine-MSC.png" alt="H-Type Power Press Machine">
+
+        <div>
+            <h2>H-Type Power Press</h2>
+
+            <p>
+                The H-Type Power Press is a heavy-duty mechanical press engineered for
+                high-load, high-precision and continuous production operations. Its
+                closed-frame “H” structure provides maximum rigidity, superior load
+                distribution and minimal deflection.
+            </p>
+
+            <p>
+                The robust frame construction ensures excellent dimensional stability
+                and long tool life, even under heavy tonnage operations. The powerful
+                mechanical drive system delivers uniform force throughout the stroke,
+                enabling accurate and repeatable results.
+            </p>
+
+            <p>
+                H-Type Power Presses are widely used in automotive component manufacturing,
+                heavy fabrication, structural parts production and large-scale industrial
+                applications.
+            </p>
+
+            <a class="back" href="powerpress.html">← Back to Products</a>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
